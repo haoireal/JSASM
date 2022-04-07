@@ -1,0 +1,65 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s linear;
+}
+html {
+  background: #373b44;
+  background: -webkit-linear-gradient(to right, #4286f4, #d18bec);
+  background: linear-gradient(to right, #4289f4, #e393ee);
+}
+#container {
+  background: #373b44;
+  background: -webkit-linear-gradient(to right, #4286f4, #d18bec);
+  background: linear-gradient(to right, #4289f4, #e393ee);
+  display: flex;
+  height: 470px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 230px;
+  background-color: #2bd1ff00;
+  z-index: 1000;
+}
+#control {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+#container h2 {
+  width: 100%;
+  position: absolute;
+  top: -250px;
+  padding: 90px 0 100px 0;
+  font-family: monospace;
+  font-size: 40px;
+  color: #d05400;
+  background: #373b44;
+  background: -webkit-linear-gradient(to right, #4286f4, #d18bec);
+  background: linear-gradient(to right, #4289f4, #e393ee);
+}
+.chucnang {
+  background-image: linear-gradient(
+    45deg,
+    #2bd1ff66 0%,
+    #2bff8866 52%,
+    #fa8bff66 90%
+  );
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.7;
+  width: 350px;
+  height: 40px;
+  border-radius: 30px;
+  font-family: monospace;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+#menuchucnang button{
+  display: block;
+  z-index: 999999;
+}

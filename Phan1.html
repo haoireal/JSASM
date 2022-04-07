@@ -1,0 +1,59 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Phan1.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Pham Gia Hao - PS20626</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="menuchucnang">
+        <button id="buttonchinh" onclick="hienThiMenu(), changeMenu()"></button>
+        <div id="buttonphu">
+          <a href="index.html" class="nutchucnang">HOME</a>
+          <a href="Phan2.html" class="nutchucnang">PART II</a>
+          <a href="Phan3.html" class="nutchucnang">PART III</a>
+          <a class="nutchucnang"></a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="title">Giải Phương Trình Bậc 2</div>
+        <div class="inline-box">
+          <div class="inbox-input">a : <input id="a" type="text" /></div>
+          <div class="inbox-input">b : <input id="b" type="text" /></div>
+          <div class="inbox-input">c : <input id="c" type="text" /></div>
+        </div>
+        <div class="show-answer">
+          <button disabled id="hienthiketqua" onclick="addItem(), soLanGiai()">
+            Hiện thị kết quả
+          </button>
+          <button onclick="randomNumber() , addItem(),soLanGiai()">
+            Gieo số
+          </button>
+        </div>
+        <div style="padding: 10px"></div>
+        <div class="box-output">
+          Phương Trình : <span id="equation"></span>
+          <div id="notifi"></div>
+          <div id="x1"></div>
+          <div id="x2"></div>
+        </div>
+        <div id="sub-content">
+          <div id="date"></div>
+          <span>Số lần giải: <b id="solangiai"></b></span>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/bai1.js"></script>
+  </body>
+</html>

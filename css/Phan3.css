@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background: #373b44;
+  background: -webkit-linear-gradient(to right, #4286f4, #d18bec);
+  background: linear-gradient(to right, #4289f4, #e393ee);
+}
+
+.box {
+    border: 1px solid gray;
+    width: 60%;
+    height: 590px;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.box .title {
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+    text-transform: uppercase;
+    position: relative;
+    left: -5px;
+}
+
+tr {
+    display: block;
+}
+
+table tr td {
+    width: 150px;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+}
+
+tr:first-child {
+    font-size: 20px;
+    font-weight: 550;
+    background-color: deepskyblue;
+    color: white;
+    text-transform: uppercase;
+}
+tr:last-child {
+    font-weight: 550;
+}
+td:first-child{
+    width: 40px;
+}
+
+tr:first-child td:nth-child(2){
+    width: 211px;
+}
+tr:last-child td:nth-child(2){
+    width: 382px;
+}
+.box-button {
+    display: flex;
+    justify-content: center;
+}
+td:nth-child(3){
+    padding: 0 10px;
+}
+.box-button .button-1 button {
+    font-size: 18px;
+    margin: 20px;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #2a2df1;
+    color: white;
+    background-color: #2a2df1;
+}
+
+.box-button .button-1 button:hover {
+    background-color: white;
+    color: #2a2df1;
+}
+
+.box-button .button-1 button:active {
+    font-size: 17px;
+}
+.box tr td input[type=checkbox] {
+      background: #0096FF;
+      opacity: 1;
+      background: lighten(#329d7b, 20%);
+}
+.none{
+    display: none;    
+}
+#listPrice{
+    color: black;
+    padding: 5px 15px 5px 15px;
+    font-size: 18px;
+    position: relative;
+    top: -5px;
+    left: -130px;
+    border-radius: 20px;
+}
+#giohang{
+    position: relative;
+    top: -5px;
+    left: 130px;
+    padding: 7px 20px 7px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+#giohang:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.tongtien{
+    font-weight: bold;
+    color: red;
+}
+.inputsl{
+    width: 50px;
+    height: 20px;
+    border-radius:20px;
+    text-align: center;
+    font-weight: bold;
+}

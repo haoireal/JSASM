@@ -1,0 +1,128 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Phan3.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Pham Gia Hao - PS20626</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="menuchucnang">
+        <button id="buttonchinh" onclick="hienThiMenu(), changeMenu()"class=""></button>
+        <div id="buttonphu">
+          <a href="index.html" class="nutchucnang">HOME</a>
+          <a href="Phan1.html" class="nutchucnang">PART I</a>
+          <a href="Phan2.html" class="nutchucnang">PART II</a>
+          <a class="nutchucnang"></a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="title">
+          <select id="listPrice" onchange="choosePrice()">
+            <option value="0">Mức Giá</option>
+            <option value="300">300 <span>$</span></option>
+            <option value="600">600 <span>$</span></option>
+            <option value="900">900 <span>$</span></option>
+            <option value="1200">1200 <span>$</span></option>
+        </select>
+        <span>Cửa hàng di động</span>
+        <button id="giohang">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+          
+        </div>
+        <table border="1" id="data">
+          <tr>
+            <td class="none"></td>
+            <td>Hàng hoá</td>
+            <td>Đơn giá</td>
+            <td>Số lượng</td>
+            <td class="money">Thành tiền</td>
+          </tr>
+          <tr>
+            <td><input onchange="onCheckBox(this)" type="checkbox" /></td>
+            <td>Iphone SE</td>
+            <td>500 <span>$</span></td>
+            <td><input type="text" class="inputsl" disabled onkeyup="updateMoney(this)" ></td>
+            <td class="money">0 <span>$</span></td>
+          </tr>
+          <tr>
+            <td><input onchange="onCheckBox(this)" type="checkbox" /></td>
+            <td>SAMSUNG S20</td>
+            <td>800 <span>$</span></td>
+            <td><input type="text" class="inputsl" disabled onkeyup="updateMoney(this)" ></td>
+            <td class="money">0 <span>$</span></td>
+          </tr>
+          <tr>
+            <td><input onchange="onCheckBox(this)" type="checkbox" /></td>
+            <td>Iphone 11</td>
+            <td>900 <span>$</span></td>
+            <td><input type="text" class="inputsl" disabled onkeyup="updateMoney(this)" ></td>
+            <td class="money">0 <span>$</span></td>
+          </tr>
+          <tr>
+            <td><input onchange="onCheckBox(this)" type="checkbox" /></td>
+            <td>Iphone 13</td>
+            <td>1500 <span>$</span></td>
+            <td><input type="text" class="inputsl" disabled onkeyup="updateMoney(this)" ></td>
+            <td class="money">0 <span>$</span></td>
+          </tr>
+          <tr>
+            <td><input onchange="onCheckBox(this)" type="checkbox" /></td>
+            <td>Realme Q</td>
+            <td>200 <span>$</span></td>
+            <td><input type="text" class="inputsl" disabled onkeyup="updateMoney(this)" ></td>
+            <td class="money">0 <span>$</span></td>
+          </tr>
+          <tr>
+            <td><input onchange="onCheckBox(this)" type="checkbox" /></td>
+            <td>Nokia 1280</td>
+            <td>10 <span>$</span></td>
+            <td><input type="text" class="inputsl" disabled onkeyup="updateMoney(this)" ></td>
+            <td class="money">0 <span>$</span></td>
+          </tr>
+          <tr>
+            <td><input onchange="onCheckBox(this)" type="checkbox" /></td>
+            <td>Window Phone</td>
+            <td>400 <span>$</span></td>
+            <td><input type="text" class="inputsl" disabled onkeyup="updateMoney(this)" ></td>
+            <td class="money">0 <span>$</span></td>
+          </tr>
+          <tr>
+            <td><input onchange="onCheckBox(this)" type="checkbox" /></td>
+            <td>ROG Phone</td>
+            <td>700 <span>$</span></td>
+            <td><input type="text" class="inputsl" disabled onkeyup="updateMoney(this)" ></td>
+            <td class="money">0 <span>$</span></td>
+          </tr>
+          <tr>
+            <td class="none"></td>
+            <td class="tongtien">Tổng</td>
+            <td class="none"></td>
+            <td id="sl"></td>
+            <td id="sum"></td>
+          </tr>
+        </table>
+        <div class="box-button">
+          <div class="button-1">
+            <button onclick="calculation()">Vào giỏ</button>
+          </div>
+          <div class="button-1">
+            <button onclick="hideShow()">ẩn hiển</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="js/bai3.js"></script>
+<script src="js/main.js"></script>
